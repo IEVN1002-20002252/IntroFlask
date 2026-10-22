@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block container %}
+<div class="container">
+    <div class="row">
+        <h1>Materia PWA</h1>
+        <h2>Grupo IEVN1002</h2>
+        <h3>{{ titulo }}</h3>
+
+        <ul>
+        {% for x in lista %}
+            <li>{{ x }}</li>
+        {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endblock %}
